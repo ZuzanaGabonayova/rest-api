@@ -1,0 +1,32 @@
+{
+    "products": [
+    {
+        "name": "iPhone 13",
+        "color": "Black",
+        "storage": 128,
+        "description": "iPhone 13. The most advanced dual camera system in iPhone ever. The dizzyingly fast A15 Bionic chip. Big jump in battery life. Durable construction. Super fast 5G. And a brighter Super Retina XDR display.",
+        "price": 618.90,
+        "inStock": false
+    },
+
+    {
+        "name": "iPhone 15 Pro",
+        "color": "Blue Titanium",
+        "storage": 256,
+        "description": "iPhone 15 Pro. Made of titanium and equipped with the breakthrough A17 Pro chip, a customizable Action button and a more versatile Pro camera system. ",
+        "price": 1269,
+        "inStock": true
+    }
+]},
+
+
+{
+    "users":[
+
+        {
+            "name": "zuzana",
+            "email": "zuza0466@easv365.dk",
+            "password": "12345678"
+        }
+    ]
+}
