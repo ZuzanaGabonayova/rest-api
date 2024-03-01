@@ -6,6 +6,8 @@ info:
 servers:
   - url: http://localhost:4000/api/
     description: Localhost development server 
+  - url: https://rest-api-qo89.onrender.com/api/docs/
+    description: Render production server  
 components:
   securitySchemes:
     ApiKeyAuth:        
@@ -100,20 +102,7 @@ paths:
                     type: string
 
 
-  /products:
-    get:
-      summary: Retrieves a list of Products
-      description: Retrieves a list of products as JSON objects.
-      responses:
-        200:
-          description: A list of product JSON objects in an array.
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Product"
-    
+  /products:  
     post:
       summary: Create a new Product
       description: Create a new Product
@@ -133,6 +122,42 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Product"
+
+    get:
+      summary: Retrieves a list of Products
+      description: Retrieves a list of products as JSON objects.
+      responses:
+        200:
+          description: A list of product JSON objects in an array.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+
+  /products/instock:
+    get:
+      summary: Retrieves a list of Products in Stock
+      description: Retrieves a list of products as JSON objects.
+      responses:
+        200:
+          description: A list of product JSON objects in an array.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
+      responses:
+        200:
+          description: A Product in the format of a JSON object.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Product"
   
   /products/{id}:
     get:
