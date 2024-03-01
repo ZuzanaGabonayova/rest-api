@@ -27,6 +27,11 @@
             "name": "zuzana",
             "email": "zuza0466@easv365.dk",
             "password": "12345678"
+        },
+        {
+            "name": "user123",
+            "email": "user@easv365.dk",
+            "password": "12345678"
         }
     ]
 }
